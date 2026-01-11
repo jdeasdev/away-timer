@@ -3,77 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JDEAS SOFTWARE | Simple, Functional Android Apps</title>
+    <title>JDEAS SOFTWARE | Away Timer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; scroll-behavior: smooth; }
         .accent-cyan { color: #22d3ee; }
         .bg-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
         .feature-card { background: rgba(30, 41, 59, 0.5); border: 1px solid rgba(34, 211, 238, 0.1); }
+        .screenshot-shadow { box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.5); }
     </style>
 </head>
 <body class="min-h-screen">
 
-    <nav class="p-6 border-b border-slate-800">
+    <nav class="p-4 border-b border-slate-800 sticky top-0 bg-slate-900/80 backdrop-blur-md z-50">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-black tracking-tighter uppercase italic">JDEAS <span class="accent-cyan">SOFTWARE</span></h1>
-            <a href="#apps" class="text-sm font-medium hover:text-cyan-400 transition">Our Apps</a>
+            <div class="flex items-center space-x-3">
+                <img src="Jdeas Logo 3.png" alt="JDEAS Logo" class="h-10 w-auto">
+                <h1 class="text-xl font-black tracking-tighter uppercase italic hidden md:block">JDEAS <span class="accent-cyan">SOFTWARE</span></h1>
+            </div>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#demo" class="hover:text-cyan-400 transition">Demo</a>
+                <a href="#screens" class="hover:text-cyan-400 transition">Screenshots</a>
+                <a href="https://play.google.com/apps/testing/com.awaytimer" class="accent-cyan border border-cyan-400/30 px-4 py-2 rounded-full hover:bg-cyan-400/10 transition">Get App</a>
+            </div>
         </div>
     </nav>
 
-    <header class="py-16 px-6 text-center bg-gradient">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Software that <span class="accent-cyan">gets out of your way.</span></h2>
-            <p class="text-xl text-slate-400 max-w-2xl mx-auto">Focused on high-utility Android tools designed for hands-free environments and industrial efficiency.</p>
+    <header class="py-16 px-6 text-center bg-gradient border-b border-slate-800">
+        <div class="max-w-5xl mx-auto">
+            <div class="mb-8 relative inline-block group">
+                <div class="absolute -inset-1 bg-cyan-500 rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+                <img src="Away Timer Feature Graphic v2.png" alt="Away Timer Feature Graphic" class="relative rounded-xl shadow-2xl max-w-full h-auto border border-slate-700">
+            </div>
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">Focus on the task, <span class="accent-cyan">not the timer.</span></h2>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10">Away Timer is the industrial-strength interval tool designed for hands-free environments like gyms, kitchens, and workshops.</p>
+            <a href="https://play.google.com/apps/testing/com.awaytimer" class="inline-block bg-white text-black font-black px-10 py-4 rounded-full hover:bg-cyan-400 transition transform hover:scale-105 shadow-xl">
+                DOWNLOAD ON GOOGLE PLAY
+            </a>
         </div>
     </header>
 
-    <section id="apps" class="py-20 px-6">
+    <section id="demo" class="py-20 px-6 bg-slate-900/30">
+        <div class="max-w-4xl mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-8">See it in action</h3>
+            <div class="aspect-video rounded-2xl overflow-hidden shadow-2xl border border-slate-700">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/LcqjZ2loue8" title="Away Timer Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="screens" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-3xl font-bold mb-12 uppercase tracking-widest text-slate-500 text-sm">App Interface</h3>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <img src="Slot 1 - Main.png" alt="Main View" class="rounded-xl screenshot-shadow border border-slate-800 transition hover:scale-105 duration-300">
+                <img src="Slot 2 - Running Workout Timer.png" alt="Workout View" class="rounded-xl screenshot-shadow border border-slate-800 transition hover:scale-105 duration-300">
+                <img src="Slot 3 - List View.png" alt="List View" class="rounded-xl screenshot-shadow border border-slate-800 transition hover:scale-105 duration-300">
+                <img src="Slot 4 - Multiple Timers View.png" alt="Multi View" class="rounded-xl screenshot-shadow border border-slate-800 transition hover:scale-105 duration-300">
+                <img src="Slot 5 - Simple Var 4.png" alt="Settings View" class="rounded-xl screenshot-shadow border border-slate-800 transition hover:scale-105 duration-300">
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-slate-900/50">
         <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-cyan-500 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                    <img src="Away Timer Feature Graphic.png" alt="Away Timer Feature Graphic" class="relative rounded-lg shadow-2xl w-full">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="accent-cyan mb-4 text-2xl">⏱️</div>
+                    <h5 class="font-bold text-xl mb-3">Auto-Stop Alerts</h5>
+                    <p class="text-slate-400 leading-relaxed text-sm">Set alerts to self-dismiss after 1–10 seconds. Hear the beep, know the time is up, and keep moving.</p>
                 </div>
-
-                <div>
-                    <span class="text-cyan-400 font-bold tracking-widest uppercase text-sm">Join the Beta</span>
-                    <h3 class="text-4xl font-black mt-2 mb-4">Away Timer: Hands-off Intervals</h3>
-                    <p class="text-lg text-slate-300 mb-6 italic">The timer that stops itself!</p>
-                    
-                    <p class="text-slate-400 mb-8 leading-relaxed">
-                        Stop interrupting your flow just to turn off an alarm. 
-                        Away Timer is the only timer app designed for when you are out of reach—whether you're holding a yoga pose, washing dishes, or in the middle of a heavy set.
-                    </p>
-
-                    <div class="space-y-4 mb-8">
-                        <div class="flex items-start">
-                            <div class="mt-1 bg-cyan-500/10 p-2 rounded mr-4"><svg class="w-5 h-5 accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                            <p><strong class="text-slate-200">Auto-Stop Logic:</strong> Set alerts to self-dismiss after 1–10s.</p>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="mt-1 bg-cyan-500/10 p-2 rounded mr-4"><svg class="w-5 h-5 accent-cyan" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
-                            <p><strong class="text-slate-200">Dynamic Sequencing:</strong> Build complex routines for workouts or cooking.</p>
-                        </div>
-                    </div>
-
-                    <a href="https://play.google.com/apps/testing/com.awaytimer" class="inline-block bg-white text-black font-black px-8 py-4 rounded-full hover:bg-cyan-400 transition transform hover:scale-105">
-                        GET IT ON GOOGLE PLAY
-                    </a>
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="accent-cyan mb-4 text-2xl">📋</div>
+                    <h5 class="font-bold text-xl mb-3">Dynamic Sequencing</h5>
+                    <p class="text-slate-400 leading-relaxed text-sm">Build complex workout or cooking routines. Drag and drop steps even while the timer is running.</p>
+                </div>
+                <div class="feature-card p-8 rounded-2xl">
+                    <div class="accent-cyan mb-4 text-2xl">🌑</div>
+                    <h5 class="font-bold text-xl mb-3">Industrial Design</h5>
+                    <p class="text-slate-400 leading-relaxed text-sm">High-contrast interface optimized for distance visibility and reliable background performance.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-slate-800 text-center text-slate-500 text-xs">
+    <footer class="py-16 border-t border-slate-800 text-center text-slate-500 text-xs">
         <div class="max-w-6xl mx-auto px-6">
-            <p class="uppercase font-bold mb-4 tracking-widest italic">JDEAS SOFTWARE</p>
-            <nav class="mb-6 space-x-4">
-                <a href="https://jdeasdev.github.io/away-timer/privacy.html" class="hover:text-cyan-400 underline">Privacy Policy</a>
+            <img src="Jdeas Logo 3.png" alt="JDEAS Logo" class="h-8 w-auto mx-auto mb-4 grayscale opacity-50">
+            <nav class="mb-6 space-x-6">
+                <a href="https://jdeasdev.github.io/away-timer/privacy.html" class="hover:text-cyan-400 transition underline decoration-slate-700">Privacy Policy</a>
+                <a href="mailto:support@jdeas.dev" class="hover:text-cyan-400 transition underline decoration-slate-700">Contact Support</a>
             </nav>
+            <p class="uppercase tracking-widest font-bold mb-2">JDEAS SOFTWARE</p>
             <p>&copy; 2026 JDEAS Software. Android and Google Play are trademarks of Google LLC.</p>
         </div>
     </footer>
